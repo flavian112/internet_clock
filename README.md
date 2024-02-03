@@ -31,7 +31,7 @@ A digital clock that syncs it's time with the internet over WiFi.
 
 ## Usage
 
-The clock is configured with Serial over USB at **9600 Baud**. The following
+The clock is configured via Serial over USB at **9600 Baud**. The following
 commands can be used:
 
 - `pt` print the current datetime
@@ -41,3 +41,31 @@ commands can be used:
 - `sz <timezone>` sets the timezone, i.g. Europe/Zurich
 - `ss <ssid>` sets the ssid
 - `sp <password>` sets the password
+
+## Time API
+
+The time is synced with [worldtimeapi.org](http://worldtimeapi.org), the
+local time can be retrieved with a GET request to `http://worldtimeapi.org/api/timezone/<timezone>`
+
+### Example
+
+```(json)
+# curl "http://worldtimeapi.org/api/timezone/Europe/Zurich"
+{
+  "abbreviation": "CET",
+  "client_ip": "2a01:8b81:2006:0:6d30:dc40:c29a:f48a",
+  "datetime": "2024-02-03T14:22:09.924310+01:00",
+  "day_of_week": 6,
+  "day_of_year": 34,
+  "dst": false,
+  "dst_from": null,
+  "dst_offset": 0,
+  "dst_until": null,
+  "raw_offset": 3600,
+  "timezone": "Europe/Zurich",
+  "unixtime": 1706966529,
+  "utc_datetime": "2024-02-03T13:22:09.924310+00:00",
+  "utc_offset": "+01:00",
+  "week_number": 5
+}
+```
