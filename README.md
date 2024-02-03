@@ -17,14 +17,14 @@ A digital clock that syncs it's time with the internet over WiFi.
 
 ### Schematic
 
-![Schematic](./assets/internet_clock_hardware_schematic.pdf)
+![Schematic](./assets/internet_clock_hardware_schematic.svg)
 
 ### Board
 
-![Board](./assets/internet_clock_hardware_board.pdf)
+![Board](./assets/internet_clock_hardware_board.svg)
 
 ## Clock Display
 
-![Clock Display](./assets/clock_display.pdf)
+![Clock Display](./assets/clock_display.jpg)
 
 ![MM5451 Display Example](./assets/mm5451_communication_example.png)
