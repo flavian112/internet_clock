@@ -25,6 +25,15 @@ A digital clock that syncs it's time with the internet over WiFi.
 
 ## Clock Display
 
+The clock display is controlled by the `MM5451` chip. To turn the segments of
+the display on, the chip has to be interfaced with a clock and a data line. The
+chip can control up to 35 segments, 34 of which are used here. The data is
+transmitted by enabling the clock (at max 500 kHz) and then signaling that the
+data transmission starts by pulling the data line high for one pulse. Data
+is read on the rising edge of the clock. Then the 35 bits are transmitted.
+The following table shows which bit corresponds to which display segment.
+Note the first bit is unused in our case.
+
 ![Clock Display](./assets/clock_display.jpg)
 
 ![MM5451 Display Example](./assets/mm5451_communication_example.png)
@@ -45,7 +54,7 @@ commands can be used:
 ## Time API
 
 The time is synced with [worldtimeapi.org](http://worldtimeapi.org), the
-local time can be retrieved with a GET request to `http://worldtimeapi.org/api/timezone/<timezone>`
+local time can be retrieved by a GET request to `http://worldtimeapi.org/api/timezone/<timezone>`
 
 ### Example
 
