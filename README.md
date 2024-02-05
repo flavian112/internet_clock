@@ -23,6 +23,11 @@ A digital clock that syncs it's time with the internet over WiFi.
 
 ![Board](./assets/internet_clock_hardware_board.svg)
 
+### 3D View
+
+![3D View](./assets/clock_display_3dview.png)
+![3D View Back](./assets/clock_display_3dview_back.png)
+
 ## Clock Display
 
 The clock display is controlled by the `MM5451` chip. To turn the segments of
