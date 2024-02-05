@@ -9,9 +9,14 @@ A digital clock that syncs it's time with the internet over WiFi.
 
 ## Resources
 
-- [MM5451](./datasheets/MM5451.pdf) LED Display Driver
-- [WL-T7DS](./datasheets/WL-T7DS.pdf) Common Anode 7-Segment Display
-- [PTV09-4020S-B104](./datasheets/PTV09-4020S-B104.pdf) Potentiometer (100k)
+- [Feather ESP32 V2 Pinout](./datasheets/adafruit_feather_esp32_v2_pinout.pdf)
+- [Feather ESP32 V2 Schematic](./datasheets/adafruit_feather_esp32_v2_schematic.png)
+- [ESP32](./datasheets/espressif_esp32.pdf)
+- [ESP32 Technical Reference Manual](./datasheets/espressif_esp32_technical_reference_manual.pdf)
+- [ESP32 PICO](./datasheets/espressif_esp32_pico_mini_02.pdf)
+- [MM5451 LED Display Driver](./datasheets/microchip_mm5450_mm5451_led_display_driver.pdf)
+- [157136S12801 WL-T7DS Common Anode 7 Segment Display](./datasheets/wurth_elektronik_157136S12801_wl-t7ds_common_anode_7_segment_display.pdf)
+- [PTV09-4020S-B104 Potentiometer (100k)](./datasheets/bourns_ptv09_potentiometer.pdf)
 
 ## Files
 
