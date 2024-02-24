@@ -88,3 +88,12 @@ local time can be retrieved by a GET request to `http://worldtimeapi.org/api/tim
   "week_number": 5
 }
 ```
+
+## Images
+
+![Breadboard Prototype](./assets/breadboard_prototype.jpg)
+
+![Completed 1](./assets/completed_1.jpg)
+
+![Completed 2](./assets/completed_2.jpg)
+
